@@ -1,0 +1,717 @@
+[
+    {
+        "label": "cv2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "cv2",
+        "description": "cv2",
+        "detail": "cv2",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "makedirs",
+        "importPath": "os",
+        "description": "os",
+        "isExtraImport": true,
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "scandir",
+        "importPath": "os",
+        "description": "os",
+        "isExtraImport": true,
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "remove",
+        "importPath": "os",
+        "description": "os",
+        "isExtraImport": true,
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "line_aa",
+        "importPath": "skimage.draw",
+        "description": "skimage.draw",
+        "isExtraImport": true,
+        "detail": "skimage.draw",
+        "documentation": {}
+    },
+    {
+        "label": "ellipse_perimeter",
+        "importPath": "skimage.draw",
+        "description": "skimage.draw",
+        "isExtraImport": true,
+        "detail": "skimage.draw",
+        "documentation": {}
+    },
+    {
+        "label": "line",
+        "importPath": "skimage.draw",
+        "description": "skimage.draw",
+        "isExtraImport": true,
+        "detail": "skimage.draw",
+        "documentation": {}
+    },
+    {
+        "label": "atan2",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "resize",
+        "importPath": "skimage.transform",
+        "description": "skimage.transform",
+        "isExtraImport": true,
+        "detail": "skimage.transform",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "threading",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "threading",
+        "description": "threading",
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "multiprocessing",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "multiprocessing",
+        "description": "multiprocessing",
+        "detail": "multiprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "filter1",
+        "importPath": "scripts.filter_1",
+        "description": "scripts.filter_1",
+        "isExtraImport": true,
+        "detail": "scripts.filter_1",
+        "documentation": {}
+    },
+    {
+        "label": "filter2",
+        "importPath": "scripts.filter_2",
+        "description": "scripts.filter_2",
+        "isExtraImport": true,
+        "detail": "scripts.filter_2",
+        "documentation": {}
+    },
+    {
+        "label": "filter3",
+        "importPath": "scripts.filter_3",
+        "description": "scripts.filter_3",
+        "isExtraImport": true,
+        "detail": "scripts.filter_3",
+        "documentation": {}
+    },
+    {
+        "label": "filter4",
+        "importPath": "scripts.filter_4",
+        "description": "scripts.filter_4",
+        "isExtraImport": true,
+        "detail": "scripts.filter_4",
+        "documentation": {}
+    },
+    {
+        "label": "filter5",
+        "importPath": "scripts.filter_5",
+        "description": "scripts.filter_5",
+        "isExtraImport": true,
+        "detail": "scripts.filter_5",
+        "documentation": {}
+    },
+    {
+        "label": "filter6",
+        "importPath": "scripts.filter_6_1",
+        "description": "scripts.filter_6_1",
+        "isExtraImport": true,
+        "detail": "scripts.filter_6_1",
+        "documentation": {}
+    },
+    {
+        "label": "join",
+        "importPath": "os.path",
+        "description": "os.path",
+        "isExtraImport": true,
+        "detail": "os.path",
+        "documentation": {}
+    },
+    {
+        "label": "dirname",
+        "importPath": "os.path",
+        "description": "os.path",
+        "isExtraImport": true,
+        "detail": "os.path",
+        "documentation": {}
+    },
+    {
+        "label": "exists",
+        "importPath": "os.path",
+        "description": "os.path",
+        "isExtraImport": true,
+        "detail": "os.path",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "send_from_directory",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "send_file",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "flash",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "abort",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "url_for",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "secure_filename",
+        "importPath": "werkzeug.utils",
+        "description": "werkzeug.utils",
+        "isExtraImport": true,
+        "detail": "werkzeug.utils",
+        "documentation": {}
+    },
+    {
+        "label": "CORS",
+        "importPath": "flask_cors",
+        "description": "flask_cors",
+        "isExtraImport": true,
+        "detail": "flask_cors",
+        "documentation": {}
+    },
+    {
+        "label": "cross_origin",
+        "importPath": "flask_cors",
+        "description": "flask_cors",
+        "isExtraImport": true,
+        "detail": "flask_cors",
+        "documentation": {}
+    },
+    {
+        "label": "qrcode",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "qrcode",
+        "description": "qrcode",
+        "detail": "qrcode",
+        "documentation": {}
+    },
+    {
+        "label": "base64",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "base64",
+        "description": "base64",
+        "detail": "base64",
+        "documentation": {}
+    },
+    {
+        "label": "BytesIO",
+        "importPath": "io",
+        "description": "io",
+        "isExtraImport": true,
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "scripts",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "scripts",
+        "description": "scripts",
+        "detail": "scripts",
+        "documentation": {}
+    },
+    {
+        "label": "filter1",
+        "kind": 2,
+        "importPath": "app.scripts.filter_1",
+        "description": "app.scripts.filter_1",
+        "peekOfCode": "def filter1(image):\n    brightness=0\n    contrast=1\n    adjusted_image = image.copy()\n    adjusted_image = cv2.addWeighted(adjusted_image, contrast, np.zeros(adjusted_image.shape, adjusted_image.dtype), 0, brightness).astype(np.uint8)\n    return adjusted_image",
+        "detail": "app.scripts.filter_1",
+        "documentation": {}
+    },
+    {
+        "label": "filter2",
+        "kind": 2,
+        "importPath": "app.scripts.filter_2",
+        "description": "app.scripts.filter_2",
+        "peekOfCode": "def filter2(image, intensity=0.6, saturation=0.7, light_adapt=0.7):\n    img = np.float32(image) / 255.0\n    mapped_image = np.clip(img * (1.0 + (img * intensity) / (img + 0.01)), 0, 1)\n    mapped_image = np.uint8(mapped_image * 255)\n    hsv_mapped_image = cv2.cvtColor(mapped_image, cv2.COLOR_BGR2HSV)\n    hsv_mapped_image[..., 1] = np.clip(hsv_mapped_image[..., 1] * saturation, 0, 255)\n    final_image = cv2.cvtColor(hsv_mapped_image, cv2.COLOR_HSV2BGR)\n    final_image = np.clip(final_image * light_adapt, 0, 255).astype(np.uint8)\n    return final_image",
+        "detail": "app.scripts.filter_2",
+        "documentation": {}
+    },
+    {
+        "label": "filter3",
+        "kind": 2,
+        "importPath": "app.scripts.filter_3",
+        "description": "app.scripts.filter_3",
+        "peekOfCode": "def filter3(image):\n    num_colors = 8\n    step_size = 256 // num_colors\n    posterized_image = (image // step_size) * step_size\n    return posterized_image",
+        "detail": "app.scripts.filter_3",
+        "documentation": {}
+    },
+    {
+        "label": "filter4",
+        "kind": 2,
+        "importPath": "app.scripts.filter_4",
+        "description": "app.scripts.filter_4",
+        "peekOfCode": "def filter4(image):\n    lab = cv2.cvtColor(image, cv2.COLOR_BGR2LAB)\n    l, a, b = cv2.split(lab)\n    clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))\n    cl = clahe.apply(l)\n    enhanced_lab = cv2.merge((cl, a, b))\n    enhanced_bgr = cv2.cvtColor(enhanced_lab, cv2.COLOR_LAB2BGR)\n    return enhanced_bgr",
+        "detail": "app.scripts.filter_4",
+        "documentation": {}
+    },
+    {
+        "label": "filter5",
+        "kind": 2,
+        "importPath": "app.scripts.filter_5",
+        "description": "app.scripts.filter_5",
+        "peekOfCode": "def filter5(image):\n    gray = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)\n    equalized = cv2.equalizeHist(gray)\n    equalized_color = cv2.cvtColor(equalized, cv2.COLOR_GRAY2BGR)\n    return equalized_color",
+        "detail": "app.scripts.filter_5",
+        "documentation": {}
+    },
+    {
+        "label": "filter6",
+        "kind": 2,
+        "importPath": "app.scripts.filter_6_1",
+        "description": "app.scripts.filter_6_1",
+        "peekOfCode": "def filter6(originalmage):\n    grayScaleImage = cv2.cvtColor(originalmage, cv2.COLOR_BGR2GRAY)\n    smoothGrayScale = cv2.medianBlur(grayScaleImage, 5)\n    getEdge = cv2.adaptiveThreshold(smoothGrayScale, 255, cv2.ADAPTIVE_THRESH_MEAN_C,   cv2.THRESH_BINARY, 9, 9)\n    colorImage = cv2.bilateralFilter(originalmage, 9, 300, 300)\n    cartoonImage = cv2.bitwise_and(colorImage, colorImage, mask=getEdge)\n    return cartoonImage",
+        "detail": "app.scripts.filter_6_1",
+        "documentation": {}
+    },
+    {
+        "label": "rgb2gray",
+        "kind": 2,
+        "importPath": "app.scripts.new_generator_optimised",
+        "description": "app.scripts.new_generator_optimised",
+        "peekOfCode": "def rgb2gray(rgb):\n    return np.dot(rgb[..., :3], [0.2989, 0.5870, 0.1140])\ndef largest_square(image: np.ndarray) -> np.ndarray:\n    size = min(image.shape[:2])\n    return image[:size, :size]\ndef create_circle_nail_positions(shape, nail_count=240, r1_multip=1, r2_multip=1):\n    height = shape[0]\n    width = shape[1]\n    centre = (height // 2, width // 2)\n    radius = min(height, width) // 2 - 1",
+        "detail": "app.scripts.new_generator_optimised",
+        "documentation": {}
+    },
+    {
+        "label": "largest_square",
+        "kind": 2,
+        "importPath": "app.scripts.new_generator_optimised",
+        "description": "app.scripts.new_generator_optimised",
+        "peekOfCode": "def largest_square(image: np.ndarray) -> np.ndarray:\n    size = min(image.shape[:2])\n    return image[:size, :size]\ndef create_circle_nail_positions(shape, nail_count=240, r1_multip=1, r2_multip=1):\n    height = shape[0]\n    width = shape[1]\n    centre = (height // 2, width // 2)\n    radius = min(height, width) // 2 - 1\n    theta = np.linspace(0, 2 * np.pi, nail_count, endpoint=False)\n    rr = centre[0] + np.round(radius * r1_multip * np.cos(theta)).astype(int)",
+        "detail": "app.scripts.new_generator_optimised",
+        "documentation": {}
+    },
+    {
+        "label": "create_circle_nail_positions",
+        "kind": 2,
+        "importPath": "app.scripts.new_generator_optimised",
+        "description": "app.scripts.new_generator_optimised",
+        "peekOfCode": "def create_circle_nail_positions(shape, nail_count=240, r1_multip=1, r2_multip=1):\n    height = shape[0]\n    width = shape[1]\n    centre = (height // 2, width // 2)\n    radius = min(height, width) // 2 - 1\n    theta = np.linspace(0, 2 * np.pi, nail_count, endpoint=False)\n    rr = centre[0] + np.round(radius * r1_multip * np.cos(theta)).astype(int)\n    cc = centre[1] + np.round(radius * r2_multip * np.sin(theta)).astype(int)\n    nails = np.column_stack((rr, cc))\n    # nails = nails.tolist()",
+        "detail": "app.scripts.new_generator_optimised",
+        "documentation": {}
+    },
+    {
+        "label": "init_canvas",
+        "kind": 2,
+        "importPath": "app.scripts.new_generator_optimised",
+        "description": "app.scripts.new_generator_optimised",
+        "peekOfCode": "def init_canvas(shape, black=False):\n    if black:\n        return np.zeros(shape)\n    else:\n        return np.ones(shape)\ndef get_aa_line(from_pos, to_pos, str_strength, picture):\n    rr, cc, val = line_aa(from_pos[0], from_pos[1], to_pos[0], to_pos[1])\n    lin = picture[rr, cc] + str_strength*val\n    lin = np.clip(lin, a_min=0, a_max=1)\n    return lin, rr, cc",
+        "detail": "app.scripts.new_generator_optimised",
+        "documentation": {}
+    },
+    {
+        "label": "get_aa_line",
+        "kind": 2,
+        "importPath": "app.scripts.new_generator_optimised",
+        "description": "app.scripts.new_generator_optimised",
+        "peekOfCode": "def get_aa_line(from_pos, to_pos, str_strength, picture):\n    rr, cc, val = line_aa(from_pos[0], from_pos[1], to_pos[0], to_pos[1])\n    lin = picture[rr, cc] + str_strength*val\n    lin = np.clip(lin, a_min=0, a_max=1)\n    return lin, rr, cc\ndef find_best_nail_position(current_position, nails, str_pic, orig_pic, str_strength):\n    # overlayed_lines = [None]*nails\n    rr_list = []\n    cc_list = []\n    cumulative_improvements = []",
+        "detail": "app.scripts.new_generator_optimised",
+        "documentation": {}
+    },
+    {
+        "label": "find_best_nail_position",
+        "kind": 2,
+        "importPath": "app.scripts.new_generator_optimised",
+        "description": "app.scripts.new_generator_optimised",
+        "peekOfCode": "def find_best_nail_position(current_position, nails, str_pic, orig_pic, str_strength):\n    # overlayed_lines = [None]*nails\n    rr_list = []\n    cc_list = []\n    cumulative_improvements = []\n    if RANDOM_NAILS is not None:\n        nail_ids = np.random.choice(len(nails), size=RANDOM_NAILS, replace=False)\n        nails_and_ids = nails[nail_ids]\n    else:\n        nails_and_ids = nails",
+        "detail": "app.scripts.new_generator_optimised",
+        "documentation": {}
+    },
+    {
+        "label": "create_art",
+        "kind": 2,
+        "importPath": "app.scripts.new_generator_optimised",
+        "description": "app.scripts.new_generator_optimised",
+        "peekOfCode": "def create_art(nails, orig_pic, str_pic, str_strength, i_limit=None):\n    start = time()\n    iter_times = []\n    current_position = nails[0]\n    pull_order = [0]\n    i = 0\n    fails = 0\n    while True:\n        start_iter = time()\n        i += 1",
+        "detail": "app.scripts.new_generator_optimised",
+        "documentation": {}
+    },
+    {
+        "label": "scale_nails",
+        "kind": 2,
+        "importPath": "app.scripts.new_generator_optimised",
+        "description": "app.scripts.new_generator_optimised",
+        "peekOfCode": "def scale_nails(x_ratio, y_ratio, nails):\n    return [(int(y_ratio * nail[0]), int(x_ratio * nail[1])) for nail in nails]\ndef pull_order_to_array_bw(order, canvas, nails, strength):\n    # Draw a black and white pull order on the defined resolution\n    for pull_start, pull_end in zip(order, order[1:]):  # pairwise iteration\n        rr, cc = line(nails[pull_start][0], nails[pull_start][1],\n                              nails[pull_end][0], nails[pull_end][1])\n        canvas[rr, cc] += strength\n    return np.clip(canvas, a_min=0, a_max=1)\ndef generate(img,filtername):",
+        "detail": "app.scripts.new_generator_optimised",
+        "documentation": {}
+    },
+    {
+        "label": "pull_order_to_array_bw",
+        "kind": 2,
+        "importPath": "app.scripts.new_generator_optimised",
+        "description": "app.scripts.new_generator_optimised",
+        "peekOfCode": "def pull_order_to_array_bw(order, canvas, nails, strength):\n    # Draw a black and white pull order on the defined resolution\n    for pull_start, pull_end in zip(order, order[1:]):  # pairwise iteration\n        rr, cc = line(nails[pull_start][0], nails[pull_start][1],\n                              nails[pull_end][0], nails[pull_end][1])\n        canvas[rr, cc] += strength\n    return np.clip(canvas, a_min=0, a_max=1)\ndef generate(img,filtername):\n    LONG_SIDE = 250\n    path = OUTPUT_PATH",
+        "detail": "app.scripts.new_generator_optimised",
+        "documentation": {}
+    },
+    {
+        "label": "generate",
+        "kind": 2,
+        "importPath": "app.scripts.new_generator_optimised",
+        "description": "app.scripts.new_generator_optimised",
+        "peekOfCode": "def generate(img,filtername):\n    LONG_SIDE = 250\n    path = OUTPUT_PATH\n    print(path)\n    if np.any(img > 100):\n        img = img / 255\n    # cv2.imshow('frame', img); cv2.waitKey(0)\n    if RADIUS1_MULTIPLIER == 1 and RADIUS2_MULTIPLIER == 1:\n        img = largest_square(img)\n        img = cv2.resize(img, (LONG_SIDE, LONG_SIDE))",
+        "detail": "app.scripts.new_generator_optimised",
+        "documentation": {}
+    },
+    {
+        "label": "generate_filter",
+        "kind": 2,
+        "importPath": "app.scripts.new_generator_optimised",
+        "description": "app.scripts.new_generator_optimised",
+        "peekOfCode": "def generate_filter(filter_name, img):\n    if filter_name == \"nofilter\":\n        return generate(img, \"nofilter\")\n    elif filter_name == \"filter1\":\n        return generate(filter1(img), \"filter1\")\n    elif filter_name == \"filter2\":\n        return generate(filter2(img), \"filter2\")\n    elif filter_name == \"filter3\":\n        return generate(filter3(img), \"filter3\")\n    elif filter_name == \"filter4\":",
+        "detail": "app.scripts.new_generator_optimised",
+        "documentation": {}
+    },
+    {
+        "label": "generate_with_threads",
+        "kind": 2,
+        "importPath": "app.scripts.new_generator_optimised",
+        "description": "app.scripts.new_generator_optimised",
+        "peekOfCode": "def generate_with_threads(img):\n    filters = [\"nofilter\", \"filter2\", \"filter4\", \"filter5\"]\n    results = {}\n    def generate_filter_thread(filter_name):\n        result = generate_filter(filter_name, img)\n        results[filter_name] = result\n    threads = []\n    for filter_name in filters:\n        thread = threading.Thread(target=generate_filter_thread, args=(filter_name,))\n        threads.append(thread)",
+        "detail": "app.scripts.new_generator_optimised",
+        "documentation": {}
+    },
+    {
+        "label": "generate_with_multiprocessing",
+        "kind": 2,
+        "importPath": "app.scripts.new_generator_optimised",
+        "description": "app.scripts.new_generator_optimised",
+        "peekOfCode": "def generate_with_multiprocessing(img):\n    filters = [\"nofilter\", \"filter1\",\"filter2\",\"filter3\", \"filter4\", \"filter5\",\"filter6\"]\n    pool = multiprocessing.Pool(processes=len(filters))\n    results = pool.starmap(generate_filter, [(filter_name, img) for filter_name in filters])\n    pool.close()\n    pool.join()\n    img0,img1, img2, img3, img4, img5, img6 = results\n    return img0,img1, img2, img3, img4, img5, img6\nif __name__ == '__main__':\n    img = cv2.imread(r\"G:\\volumeD9july2023\\python\\turtle\\stringart\\collarge\\final_filters\\37\\sung-wang-g4DgCF90EM4-unsplash.jpg\")",
+        "detail": "app.scripts.new_generator_optimised",
+        "documentation": {}
+    },
+    {
+        "label": "OUTPUT_FILE",
+        "kind": 5,
+        "importPath": "app.scripts.new_generator_optimised",
+        "description": "app.scripts.new_generator_optimised",
+        "peekOfCode": "OUTPUT_FILE = \"output.png\"\nJSON_FILE = \"result.json\"\nSIDE_LEN = 500\nEXPORT_STRENGTH = 0.07\nPULL_AMOUNT = 5000\nRANDOM_NAILS = None\nRADIUS1_MULTIPLIER = 1\nRADIUS2_MULTIPLIER = 1\nNAILS_SIZE = 240\n# OUTPUT_PATH = os.getcwd()",
+        "detail": "app.scripts.new_generator_optimised",
+        "documentation": {}
+    },
+    {
+        "label": "JSON_FILE",
+        "kind": 5,
+        "importPath": "app.scripts.new_generator_optimised",
+        "description": "app.scripts.new_generator_optimised",
+        "peekOfCode": "JSON_FILE = \"result.json\"\nSIDE_LEN = 500\nEXPORT_STRENGTH = 0.07\nPULL_AMOUNT = 5000\nRANDOM_NAILS = None\nRADIUS1_MULTIPLIER = 1\nRADIUS2_MULTIPLIER = 1\nNAILS_SIZE = 240\n# OUTPUT_PATH = os.getcwd()\nOUTPUT_PATH = \"upload\"",
+        "detail": "app.scripts.new_generator_optimised",
+        "documentation": {}
+    },
+    {
+        "label": "SIDE_LEN",
+        "kind": 5,
+        "importPath": "app.scripts.new_generator_optimised",
+        "description": "app.scripts.new_generator_optimised",
+        "peekOfCode": "SIDE_LEN = 500\nEXPORT_STRENGTH = 0.07\nPULL_AMOUNT = 5000\nRANDOM_NAILS = None\nRADIUS1_MULTIPLIER = 1\nRADIUS2_MULTIPLIER = 1\nNAILS_SIZE = 240\n# OUTPUT_PATH = os.getcwd()\nOUTPUT_PATH = \"upload\"\ndef rgb2gray(rgb):",
+        "detail": "app.scripts.new_generator_optimised",
+        "documentation": {}
+    },
+    {
+        "label": "EXPORT_STRENGTH",
+        "kind": 5,
+        "importPath": "app.scripts.new_generator_optimised",
+        "description": "app.scripts.new_generator_optimised",
+        "peekOfCode": "EXPORT_STRENGTH = 0.07\nPULL_AMOUNT = 5000\nRANDOM_NAILS = None\nRADIUS1_MULTIPLIER = 1\nRADIUS2_MULTIPLIER = 1\nNAILS_SIZE = 240\n# OUTPUT_PATH = os.getcwd()\nOUTPUT_PATH = \"upload\"\ndef rgb2gray(rgb):\n    return np.dot(rgb[..., :3], [0.2989, 0.5870, 0.1140])",
+        "detail": "app.scripts.new_generator_optimised",
+        "documentation": {}
+    },
+    {
+        "label": "PULL_AMOUNT",
+        "kind": 5,
+        "importPath": "app.scripts.new_generator_optimised",
+        "description": "app.scripts.new_generator_optimised",
+        "peekOfCode": "PULL_AMOUNT = 5000\nRANDOM_NAILS = None\nRADIUS1_MULTIPLIER = 1\nRADIUS2_MULTIPLIER = 1\nNAILS_SIZE = 240\n# OUTPUT_PATH = os.getcwd()\nOUTPUT_PATH = \"upload\"\ndef rgb2gray(rgb):\n    return np.dot(rgb[..., :3], [0.2989, 0.5870, 0.1140])\ndef largest_square(image: np.ndarray) -> np.ndarray:",
+        "detail": "app.scripts.new_generator_optimised",
+        "documentation": {}
+    },
+    {
+        "label": "RANDOM_NAILS",
+        "kind": 5,
+        "importPath": "app.scripts.new_generator_optimised",
+        "description": "app.scripts.new_generator_optimised",
+        "peekOfCode": "RANDOM_NAILS = None\nRADIUS1_MULTIPLIER = 1\nRADIUS2_MULTIPLIER = 1\nNAILS_SIZE = 240\n# OUTPUT_PATH = os.getcwd()\nOUTPUT_PATH = \"upload\"\ndef rgb2gray(rgb):\n    return np.dot(rgb[..., :3], [0.2989, 0.5870, 0.1140])\ndef largest_square(image: np.ndarray) -> np.ndarray:\n    size = min(image.shape[:2])",
+        "detail": "app.scripts.new_generator_optimised",
+        "documentation": {}
+    },
+    {
+        "label": "RADIUS1_MULTIPLIER",
+        "kind": 5,
+        "importPath": "app.scripts.new_generator_optimised",
+        "description": "app.scripts.new_generator_optimised",
+        "peekOfCode": "RADIUS1_MULTIPLIER = 1\nRADIUS2_MULTIPLIER = 1\nNAILS_SIZE = 240\n# OUTPUT_PATH = os.getcwd()\nOUTPUT_PATH = \"upload\"\ndef rgb2gray(rgb):\n    return np.dot(rgb[..., :3], [0.2989, 0.5870, 0.1140])\ndef largest_square(image: np.ndarray) -> np.ndarray:\n    size = min(image.shape[:2])\n    return image[:size, :size]",
+        "detail": "app.scripts.new_generator_optimised",
+        "documentation": {}
+    },
+    {
+        "label": "RADIUS2_MULTIPLIER",
+        "kind": 5,
+        "importPath": "app.scripts.new_generator_optimised",
+        "description": "app.scripts.new_generator_optimised",
+        "peekOfCode": "RADIUS2_MULTIPLIER = 1\nNAILS_SIZE = 240\n# OUTPUT_PATH = os.getcwd()\nOUTPUT_PATH = \"upload\"\ndef rgb2gray(rgb):\n    return np.dot(rgb[..., :3], [0.2989, 0.5870, 0.1140])\ndef largest_square(image: np.ndarray) -> np.ndarray:\n    size = min(image.shape[:2])\n    return image[:size, :size]\ndef create_circle_nail_positions(shape, nail_count=240, r1_multip=1, r2_multip=1):",
+        "detail": "app.scripts.new_generator_optimised",
+        "documentation": {}
+    },
+    {
+        "label": "NAILS_SIZE",
+        "kind": 5,
+        "importPath": "app.scripts.new_generator_optimised",
+        "description": "app.scripts.new_generator_optimised",
+        "peekOfCode": "NAILS_SIZE = 240\n# OUTPUT_PATH = os.getcwd()\nOUTPUT_PATH = \"upload\"\ndef rgb2gray(rgb):\n    return np.dot(rgb[..., :3], [0.2989, 0.5870, 0.1140])\ndef largest_square(image: np.ndarray) -> np.ndarray:\n    size = min(image.shape[:2])\n    return image[:size, :size]\ndef create_circle_nail_positions(shape, nail_count=240, r1_multip=1, r2_multip=1):\n    height = shape[0]",
+        "detail": "app.scripts.new_generator_optimised",
+        "documentation": {}
+    },
+    {
+        "label": "OUTPUT_PATH",
+        "kind": 5,
+        "importPath": "app.scripts.new_generator_optimised",
+        "description": "app.scripts.new_generator_optimised",
+        "peekOfCode": "OUTPUT_PATH = \"upload\"\ndef rgb2gray(rgb):\n    return np.dot(rgb[..., :3], [0.2989, 0.5870, 0.1140])\ndef largest_square(image: np.ndarray) -> np.ndarray:\n    size = min(image.shape[:2])\n    return image[:size, :size]\ndef create_circle_nail_positions(shape, nail_count=240, r1_multip=1, r2_multip=1):\n    height = shape[0]\n    width = shape[1]\n    centre = (height // 2, width // 2)",
+        "detail": "app.scripts.new_generator_optimised",
+        "documentation": {}
+    },
+    {
+        "label": "allowed_file",
+        "kind": 2,
+        "importPath": "app.app",
+        "description": "app.app",
+        "peekOfCode": "def allowed_file(filename):\n    return '.' in filename and \\\n        filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS\ndef create_folder(workspace, folder):\n    path = join(workspace, folder)\n    if not exists(path):\n        makedirs(path)\n@app.route('/api/upload1', methods=['POST'])\n@cross_origin()\ndef create_task1():",
+        "detail": "app.app",
+        "documentation": {}
+    },
+    {
+        "label": "create_folder",
+        "kind": 2,
+        "importPath": "app.app",
+        "description": "app.app",
+        "peekOfCode": "def create_folder(workspace, folder):\n    path = join(workspace, folder)\n    if not exists(path):\n        makedirs(path)\n@app.route('/api/upload1', methods=['POST'])\n@cross_origin()\ndef create_task1():\n    folder = request.form['code']\n    create_folder(UPLOAD_FOLDER, folder)\n    direct = app.config['UPLOAD_FOLDER']+\"/\"+folder",
+        "detail": "app.app",
+        "documentation": {}
+    },
+    {
+        "label": "create_task1",
+        "kind": 2,
+        "importPath": "app.app",
+        "description": "app.app",
+        "peekOfCode": "def create_task1():\n    folder = request.form['code']\n    create_folder(UPLOAD_FOLDER, folder)\n    direct = app.config['UPLOAD_FOLDER']+\"/\"+folder\n    for file in scandir(direct):\n        remove(file.path)    \n    if 'file' in request.form:\n        encoded_image = request.form['file']\n        decoded_image = base64.b64decode(encoded_image.split(',')[1])\n        image = Image.open(BytesIO(decoded_image))",
+        "detail": "app.app",
+        "documentation": {}
+    },
+    {
+        "label": "create_qr",
+        "kind": 2,
+        "importPath": "app.app",
+        "description": "app.app",
+        "peekOfCode": "def create_qr():\n    hash = request.args.get('hash')\n    qr = qrcode.QRCode(version=1, box_size=10, border=2)\n    qr.add_data('https://mypoint.mydev.kz/assembly/'+hash)\n    qr.make(fit=True)\n    img = qr.make_image(fill=\"black\", back_color=\"#FAFAFA\")\n    # Сохранение QR-кода в файл\n    image_path = \"qrcode.jpg\"  # Путь к файлу изображения QR-кода\n    img.save(image_path)\n    return send_file(image_path, mimetype=\"image/png\")",
+        "detail": "app.app",
+        "documentation": {}
+    },
+    {
+        "label": "send_static",
+        "kind": 2,
+        "importPath": "app.app",
+        "description": "app.app",
+        "peekOfCode": "def send_static(path, name):\n    return send_from_directory(\"../../\"+ app.config['UPLOAD_FOLDER'] + \"/\" + path, name)\n@app.route('/')\n@cross_origin()\ndef index():\n    return \"MyPointArt Generator API! \"\nif __name__ == '__main__':\n    app.run(host='0.0.0.0', port=3021, debug=True)",
+        "detail": "app.app",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "app.app",
+        "description": "app.app",
+        "peekOfCode": "def index():\n    return \"MyPointArt Generator API! \"\nif __name__ == '__main__':\n    app.run(host='0.0.0.0', port=3021, debug=True)",
+        "detail": "app.app",
+        "documentation": {}
+    },
+    {
+        "label": "UPLOAD_FOLDER",
+        "kind": 5,
+        "importPath": "app.app",
+        "description": "app.app",
+        "peekOfCode": "UPLOAD_FOLDER = 'upload'\nALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif'}\napp = Flask(__name__, static_folder='/upload')\napp.config[\"DEBUG\"] = True\napp.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER\ncors = CORS(app)\napp.config['CORS_HEADERS'] = 'Content-Type'\ndef allowed_file(filename):\n    return '.' in filename and \\\n        filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS",
+        "detail": "app.app",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_EXTENSIONS",
+        "kind": 5,
+        "importPath": "app.app",
+        "description": "app.app",
+        "peekOfCode": "ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif'}\napp = Flask(__name__, static_folder='/upload')\napp.config[\"DEBUG\"] = True\napp.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER\ncors = CORS(app)\napp.config['CORS_HEADERS'] = 'Content-Type'\ndef allowed_file(filename):\n    return '.' in filename and \\\n        filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS\ndef create_folder(workspace, folder):",
+        "detail": "app.app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app.app",
+        "description": "app.app",
+        "peekOfCode": "app = Flask(__name__, static_folder='/upload')\napp.config[\"DEBUG\"] = True\napp.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER\ncors = CORS(app)\napp.config['CORS_HEADERS'] = 'Content-Type'\ndef allowed_file(filename):\n    return '.' in filename and \\\n        filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS\ndef create_folder(workspace, folder):\n    path = join(workspace, folder)",
+        "detail": "app.app",
+        "documentation": {}
+    },
+    {
+        "label": "app.config[\"DEBUG\"]",
+        "kind": 5,
+        "importPath": "app.app",
+        "description": "app.app",
+        "peekOfCode": "app.config[\"DEBUG\"] = True\napp.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER\ncors = CORS(app)\napp.config['CORS_HEADERS'] = 'Content-Type'\ndef allowed_file(filename):\n    return '.' in filename and \\\n        filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS\ndef create_folder(workspace, folder):\n    path = join(workspace, folder)\n    if not exists(path):",
+        "detail": "app.app",
+        "documentation": {}
+    },
+    {
+        "label": "app.config['UPLOAD_FOLDER']",
+        "kind": 5,
+        "importPath": "app.app",
+        "description": "app.app",
+        "peekOfCode": "app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER\ncors = CORS(app)\napp.config['CORS_HEADERS'] = 'Content-Type'\ndef allowed_file(filename):\n    return '.' in filename and \\\n        filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS\ndef create_folder(workspace, folder):\n    path = join(workspace, folder)\n    if not exists(path):\n        makedirs(path)",
+        "detail": "app.app",
+        "documentation": {}
+    },
+    {
+        "label": "cors",
+        "kind": 5,
+        "importPath": "app.app",
+        "description": "app.app",
+        "peekOfCode": "cors = CORS(app)\napp.config['CORS_HEADERS'] = 'Content-Type'\ndef allowed_file(filename):\n    return '.' in filename and \\\n        filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS\ndef create_folder(workspace, folder):\n    path = join(workspace, folder)\n    if not exists(path):\n        makedirs(path)\n@app.route('/api/upload1', methods=['POST'])",
+        "detail": "app.app",
+        "documentation": {}
+    },
+    {
+        "label": "app.config['CORS_HEADERS']",
+        "kind": 5,
+        "importPath": "app.app",
+        "description": "app.app",
+        "peekOfCode": "app.config['CORS_HEADERS'] = 'Content-Type'\ndef allowed_file(filename):\n    return '.' in filename and \\\n        filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS\ndef create_folder(workspace, folder):\n    path = join(workspace, folder)\n    if not exists(path):\n        makedirs(path)\n@app.route('/api/upload1', methods=['POST'])\n@cross_origin()",
+        "detail": "app.app",
+        "documentation": {}
+    }
+]

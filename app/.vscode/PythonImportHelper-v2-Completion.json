@@ -1,0 +1,377 @@
+[
+    {
+        "label": "collections",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "collections",
+        "description": "collections",
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "cv2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "cv2",
+        "description": "cv2",
+        "detail": "cv2",
+        "documentation": {}
+    },
+    {
+        "label": "urllib.request",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "urllib.request",
+        "description": "urllib.request",
+        "detail": "urllib.request",
+        "documentation": {}
+    },
+    {
+        "label": "URLError",
+        "importPath": "urllib.error",
+        "description": "urllib.error",
+        "isExtraImport": true,
+        "detail": "urllib.error",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "join",
+        "importPath": "os.path",
+        "description": "os.path",
+        "isExtraImport": true,
+        "detail": "os.path",
+        "documentation": {}
+    },
+    {
+        "label": "dirname",
+        "importPath": "os.path",
+        "description": "os.path",
+        "isExtraImport": true,
+        "detail": "os.path",
+        "documentation": {}
+    },
+    {
+        "label": "exists",
+        "importPath": "os.path",
+        "description": "os.path",
+        "isExtraImport": true,
+        "detail": "os.path",
+        "documentation": {}
+    },
+    {
+        "label": "makedirs",
+        "importPath": "os",
+        "description": "os",
+        "isExtraImport": true,
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "scandir",
+        "importPath": "os",
+        "description": "os",
+        "isExtraImport": true,
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "remove",
+        "importPath": "os",
+        "description": "os",
+        "isExtraImport": true,
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "send_from_directory",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "send_file",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "flash",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "abort",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "url_for",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "secure_filename",
+        "importPath": "werkzeug.utils",
+        "description": "werkzeug.utils",
+        "isExtraImport": true,
+        "detail": "werkzeug.utils",
+        "documentation": {}
+    },
+    {
+        "label": "CORS",
+        "importPath": "flask_cors",
+        "description": "flask_cors",
+        "isExtraImport": true,
+        "detail": "flask_cors",
+        "documentation": {}
+    },
+    {
+        "label": "cross_origin",
+        "importPath": "flask_cors",
+        "description": "flask_cors",
+        "isExtraImport": true,
+        "detail": "flask_cors",
+        "documentation": {}
+    },
+    {
+        "label": "qrcode",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "qrcode",
+        "description": "qrcode",
+        "detail": "qrcode",
+        "documentation": {}
+    },
+    {
+        "label": "base64",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "base64",
+        "description": "base64",
+        "detail": "base64",
+        "documentation": {}
+    },
+    {
+        "label": "BytesIO",
+        "importPath": "io",
+        "description": "io",
+        "isExtraImport": true,
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "scripts",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "scripts",
+        "description": "scripts",
+        "detail": "scripts",
+        "documentation": {}
+    },
+    {
+        "label": "start_generator",
+        "kind": 2,
+        "importPath": "scripts.generator",
+        "description": "scripts.generator",
+        "peekOfCode": "def start_generator(path, filename):\n    def center_crop(img, new_width=None, new_height=None):\n        width = img.shape[1]\n        height = img.shape[0]\n        print(\"1\")\n        if width > 1000 or height > 1000:\n            width = int(width/2)\n            height = int(height/2)\n        img = cv2.resize(img, (width, height))\n        if new_width is None:",
+        "detail": "scripts.generator",
+        "documentation": {}
+    },
+    {
+        "label": "allowed_file",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def allowed_file(filename):\n    return '.' in filename and \\\n        filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS\ndef create_folder(workspace, folder):\n    path = join(workspace, folder)\n    if not exists(path):\n        makedirs(path)\n@app.route('/api/upload1', methods=['POST'])\n@cross_origin()\ndef create_task1():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "create_folder",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def create_folder(workspace, folder):\n    path = join(workspace, folder)\n    if not exists(path):\n        makedirs(path)\n@app.route('/api/upload1', methods=['POST'])\n@cross_origin()\ndef create_task1():\n    folder = request.form['code']\n    create_folder(UPLOAD_FOLDER, folder)\n    direct = app.config['UPLOAD_FOLDER']+\"/\"+folder",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "create_task1",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def create_task1():\n    folder = request.form['code']\n    create_folder(UPLOAD_FOLDER, folder)\n    direct = app.config['UPLOAD_FOLDER']+\"/\"+folder\n    for file in scandir(direct):\n        remove(file.path)    \n    if 'file' in request.form:\n        encoded_image = request.form['file']\n        decoded_image = base64.b64decode(encoded_image.split(',')[1])\n        image = Image.open(BytesIO(decoded_image))",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "create_qr",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def create_qr():\n    hash = request.args.get('hash')\n    qr = qrcode.QRCode(version=1, box_size=10, border=2)\n    qr.add_data('https://mypoint.mydev.kz/assembly/'+hash)\n    qr.make(fit=True)\n    img = qr.make_image(fill=\"black\", back_color=\"#FAFAFA\")\n    # Сохранение QR-кода в файл\n    image_path = \"qrcode.jpg\"  # Путь к файлу изображения QR-кода\n    img.save(image_path)\n    return send_file(image_path, mimetype=\"image/png\")",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "send_static",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def send_static(path, name):\n    return send_from_directory(app.config['UPLOAD_FOLDER'] + \"/\" + path, name)\n@app.route('/')\n@cross_origin()\ndef index():\n    return \"MyPointArt Generator API!\"\nif __name__ == '__main__':\n    app.run(host='0.0.0.0', port=3021)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def index():\n    return \"MyPointArt Generator API!\"\nif __name__ == '__main__':\n    app.run(host='0.0.0.0', port=3021)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "UPLOAD_FOLDER",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "UPLOAD_FOLDER = 'upload'\nALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif'}\napp = Flask(__name__, static_folder='/upload')\napp.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER\ncors = CORS(app)\napp.config['CORS_HEADERS'] = 'Content-Type'\ndef allowed_file(filename):\n    return '.' in filename and \\\n        filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS\ndef create_folder(workspace, folder):",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_EXTENSIONS",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif'}\napp = Flask(__name__, static_folder='/upload')\napp.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER\ncors = CORS(app)\napp.config['CORS_HEADERS'] = 'Content-Type'\ndef allowed_file(filename):\n    return '.' in filename and \\\n        filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS\ndef create_folder(workspace, folder):\n    path = join(workspace, folder)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app = Flask(__name__, static_folder='/upload')\napp.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER\ncors = CORS(app)\napp.config['CORS_HEADERS'] = 'Content-Type'\ndef allowed_file(filename):\n    return '.' in filename and \\\n        filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS\ndef create_folder(workspace, folder):\n    path = join(workspace, folder)\n    if not exists(path):",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app.config['UPLOAD_FOLDER']",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER\ncors = CORS(app)\napp.config['CORS_HEADERS'] = 'Content-Type'\ndef allowed_file(filename):\n    return '.' in filename and \\\n        filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS\ndef create_folder(workspace, folder):\n    path = join(workspace, folder)\n    if not exists(path):\n        makedirs(path)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "cors",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "cors = CORS(app)\napp.config['CORS_HEADERS'] = 'Content-Type'\ndef allowed_file(filename):\n    return '.' in filename and \\\n        filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS\ndef create_folder(workspace, folder):\n    path = join(workspace, folder)\n    if not exists(path):\n        makedirs(path)\n@app.route('/api/upload1', methods=['POST'])",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app.config['CORS_HEADERS']",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app.config['CORS_HEADERS'] = 'Content-Type'\ndef allowed_file(filename):\n    return '.' in filename and \\\n        filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS\ndef create_folder(workspace, folder):\n    path = join(workspace, folder)\n    if not exists(path):\n        makedirs(path)\n@app.route('/api/upload1', methods=['POST'])\n@cross_origin()",
+        "detail": "app",
+        "documentation": {}
+    }
+]
