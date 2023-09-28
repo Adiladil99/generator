@@ -1005,7 +1005,7 @@
         "kind": 2,
         "importPath": "app.app",
         "description": "app.app",
-        "peekOfCode": "def send_static(path, name):\n    return send_from_directory(\"../../\"+ app.config['UPLOAD_FOLDER'] + \"/\" + path, name)\n@app.route('/')\n@cross_origin()\ndef index():\n    return \"MyPointArt Generator API! \"\nif __name__ == '__main__':\n    app.run(host='0.0.0.0', port=3021, debug=True)",
+        "peekOfCode": "def send_static(path, name):\n    return send_from_directory(\"../\"+ app.config['UPLOAD_FOLDER'] + \"/\" + path, name)\n@app.route('/')\n@cross_origin()\ndef index():\n    return \"MyPointArt Generator API! \"\nif __name__ == '__main__':\n    app.run(host='0.0.0.0', port=3021, debug=True)",
         "detail": "app.app",
         "documentation": {}
     },
