@@ -48,7 +48,7 @@ def create_task1():
         filename = secure_filename(file1.filename)
         file1.save(join(app.config['UPLOAD_FOLDER']+"/"+folder, filename))
     try:
-        scripts.generate(app.config['UPLOAD_FOLDER'] + "/" + folder + "/", filename)
+        scripts.generate_all_with_processing(app.config['UPLOAD_FOLDER'] + "/" + folder + "/", filename)
         return jsonify({
             'url': [
                 f'http://{request.headers.get("Host")}/'+app.config['UPLOAD_FOLDER']+"/"+folder+"/result1.png",
