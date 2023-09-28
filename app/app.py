@@ -84,7 +84,7 @@ def create_qr():
 @app.route('/upload/<path:path>/<path:name>')
 @cross_origin()
 def send_static(path, name):
-    return send_from_directory("/"+ app.config['UPLOAD_FOLDER'] + "/" + path, name)
+    return send_from_directory("../../"+ app.config['UPLOAD_FOLDER'] + "/" + path, name)
 
 @app.route('/')
 @cross_origin()

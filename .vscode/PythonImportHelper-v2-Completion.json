@@ -18,39 +18,6 @@
         "documentation": {}
     },
     {
-        "label": "os",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "os",
-        "description": "os",
-        "detail": "os",
-        "documentation": {}
-    },
-    {
-        "label": "makedirs",
-        "importPath": "os",
-        "description": "os",
-        "isExtraImport": true,
-        "detail": "os",
-        "documentation": {}
-    },
-    {
-        "label": "scandir",
-        "importPath": "os",
-        "description": "os",
-        "isExtraImport": true,
-        "detail": "os",
-        "documentation": {}
-    },
-    {
-        "label": "remove",
-        "importPath": "os",
-        "description": "os",
-        "isExtraImport": true,
-        "detail": "os",
-        "documentation": {}
-    },
-    {
         "label": "line_aa",
         "importPath": "skimage.draw",
         "description": "skimage.draw",
@@ -277,6 +244,30 @@
         "documentation": {}
     },
     {
+        "label": "makedirs",
+        "importPath": "os",
+        "description": "os",
+        "isExtraImport": true,
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "scandir",
+        "importPath": "os",
+        "description": "os",
+        "isExtraImport": true,
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "remove",
+        "importPath": "os",
+        "description": "os",
+        "isExtraImport": true,
+        "detail": "os",
+        "documentation": {}
+    },
+    {
         "label": "Flask",
         "importPath": "flask",
         "description": "flask",
@@ -416,30 +407,12 @@
         "documentation": {}
     },
     {
-        "label": "filter1",
-        "kind": 2,
-        "importPath": "app.scripts.filter_1",
-        "description": "app.scripts.filter_1",
-        "peekOfCode": "def filter1(image):\n    brightness=0\n    contrast=1\n    adjusted_image = image.copy()\n    adjusted_image = cv2.addWeighted(adjusted_image, contrast, np.zeros(adjusted_image.shape, adjusted_image.dtype), 0, brightness).astype(np.uint8)\n    return adjusted_image",
-        "detail": "app.scripts.filter_1",
-        "documentation": {}
-    },
-    {
         "label": "filter2",
         "kind": 2,
         "importPath": "app.scripts.filter_2",
         "description": "app.scripts.filter_2",
         "peekOfCode": "def filter2(image, intensity=0.6, saturation=0.7, light_adapt=0.7):\n    img = np.float32(image) / 255.0\n    mapped_image = np.clip(img * (1.0 + (img * intensity) / (img + 0.01)), 0, 1)\n    mapped_image = np.uint8(mapped_image * 255)\n    hsv_mapped_image = cv2.cvtColor(mapped_image, cv2.COLOR_BGR2HSV)\n    hsv_mapped_image[..., 1] = np.clip(hsv_mapped_image[..., 1] * saturation, 0, 255)\n    final_image = cv2.cvtColor(hsv_mapped_image, cv2.COLOR_HSV2BGR)\n    final_image = np.clip(final_image * light_adapt, 0, 255).astype(np.uint8)\n    return final_image",
         "detail": "app.scripts.filter_2",
-        "documentation": {}
-    },
-    {
-        "label": "filter3",
-        "kind": 2,
-        "importPath": "app.scripts.filter_3",
-        "description": "app.scripts.filter_3",
-        "peekOfCode": "def filter3(image):\n    num_colors = 8\n    step_size = 256 // num_colors\n    posterized_image = (image // step_size) * step_size\n    return posterized_image",
-        "detail": "app.scripts.filter_3",
         "documentation": {}
     },
     {
@@ -458,15 +431,6 @@
         "description": "app.scripts.filter_5",
         "peekOfCode": "def filter5(image):\n    gray = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)\n    equalized = cv2.equalizeHist(gray)\n    equalized_color = cv2.cvtColor(equalized, cv2.COLOR_GRAY2BGR)\n    return equalized_color",
         "detail": "app.scripts.filter_5",
-        "documentation": {}
-    },
-    {
-        "label": "filter6",
-        "kind": 2,
-        "importPath": "app.scripts.filter_6_1",
-        "description": "app.scripts.filter_6_1",
-        "peekOfCode": "def filter6(originalmage):\n    grayScaleImage = cv2.cvtColor(originalmage, cv2.COLOR_BGR2GRAY)\n    smoothGrayScale = cv2.medianBlur(grayScaleImage, 5)\n    getEdge = cv2.adaptiveThreshold(smoothGrayScale, 255, cv2.ADAPTIVE_THRESH_MEAN_C,   cv2.THRESH_BINARY, 9, 9)\n    colorImage = cv2.bilateralFilter(originalmage, 9, 300, 300)\n    cartoonImage = cv2.bitwise_and(colorImage, colorImage, mask=getEdge)\n    return cartoonImage",
-        "detail": "app.scripts.filter_6_1",
         "documentation": {}
     },
     {
@@ -1041,7 +1005,7 @@
         "kind": 2,
         "importPath": "app.app",
         "description": "app.app",
-        "peekOfCode": "def send_static(path, name):\n    return send_from_directory(\"/\"+ app.config['UPLOAD_FOLDER'] + \"/\" + path, name)\n@app.route('/')\n@cross_origin()\ndef index():\n    return \"MyPointArt Generator API! \"\nif __name__ == '__main__':\n    app.run(host='0.0.0.0', port=3021, debug=True)",
+        "peekOfCode": "def send_static(path, name):\n    return send_from_directory(\"../../\"+ app.config['UPLOAD_FOLDER'] + \"/\" + path, name)\n@app.route('/')\n@cross_origin()\ndef index():\n    return \"MyPointArt Generator API! \"\nif __name__ == '__main__':\n    app.run(host='0.0.0.0', port=3021, debug=True)",
         "detail": "app.app",
         "documentation": {}
     },
