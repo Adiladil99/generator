@@ -51,16 +51,16 @@ def create_task1():
         scripts.generate_all_with_processing(app.config['UPLOAD_FOLDER'] + "/" + folder + "/", filename)
         return jsonify({
             'url': [
-                f'http://{request.headers.get("Host")}/'+app.config['UPLOAD_FOLDER']+"/"+folder+"/result1.png",
-                f'http://{request.headers.get("Host")}/'+app.config['UPLOAD_FOLDER']+"/"+folder+"/result2.png",
-                f'http://{request.headers.get("Host")}/'+app.config['UPLOAD_FOLDER']+"/"+folder+"/result3.png",
-                f'http://{request.headers.get("Host")}/'+app.config['UPLOAD_FOLDER']+"/"+folder+"/result4.png",
+                f'https://{request.headers.get("Host")}/'+app.config['UPLOAD_FOLDER']+"/"+folder+"/result1.png",
+                f'https://{request.headers.get("Host")}/'+app.config['UPLOAD_FOLDER']+"/"+folder+"/result2.png",
+                f'https://{request.headers.get("Host")}/'+app.config['UPLOAD_FOLDER']+"/"+folder+"/result3.png",
+                f'https://{request.headers.get("Host")}/'+app.config['UPLOAD_FOLDER']+"/"+folder+"/result4.png",
             ],
             'json': [
-                f'http://{request.headers.get("Host")}/'+app.config['UPLOAD_FOLDER']+"/"+folder+"/result1.json",
-                f'http://{request.headers.get("Host")}/'+app.config['UPLOAD_FOLDER']+"/"+folder+"/result2.json",
-                f'http://{request.headers.get("Host")}/'+app.config['UPLOAD_FOLDER']+"/"+folder+"/result3.json",
-                f'http://{request.headers.get("Host")}/'+app.config['UPLOAD_FOLDER']+"/"+folder+"/result4.json",
+                f'https://{request.headers.get("Host")}/'+app.config['UPLOAD_FOLDER']+"/"+folder+"/result1.json",
+                f'https://{request.headers.get("Host")}/'+app.config['UPLOAD_FOLDER']+"/"+folder+"/result2.json",
+                f'https://{request.headers.get("Host")}/'+app.config['UPLOAD_FOLDER']+"/"+folder+"/result3.json",
+                f'https://{request.headers.get("Host")}/'+app.config['UPLOAD_FOLDER']+"/"+folder+"/result4.json",
                 ]
         }), 200
     except Exception as e:
@@ -84,7 +84,7 @@ def create_qr():
 @app.route('/upload/<path:path>/<path:name>')
 @cross_origin()
 def send_static(path, name):
-    return send_from_directory("../../"+ app.config['UPLOAD_FOLDER'] + "/" + path, name)
+    return send_from_directory("/"+ app.config['UPLOAD_FOLDER'] + "/" + path, name)
 
 @app.route('/')
 @cross_origin()
