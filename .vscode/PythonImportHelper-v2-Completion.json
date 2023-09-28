@@ -99,54 +99,11 @@
         "documentation": {}
     },
     {
-        "label": "argparse",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "argparse",
-        "description": "argparse",
-        "detail": "argparse",
-        "documentation": {}
-    },
-    {
-        "label": "threading",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "threading",
-        "description": "threading",
-        "detail": "threading",
-        "documentation": {}
-    },
-    {
-        "label": "multiprocessing",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "multiprocessing",
-        "description": "multiprocessing",
-        "detail": "multiprocessing",
-        "documentation": {}
-    },
-    {
-        "label": "filter1",
-        "importPath": "scripts.filter_1",
-        "description": "scripts.filter_1",
-        "isExtraImport": true,
-        "detail": "scripts.filter_1",
-        "documentation": {}
-    },
-    {
         "label": "filter2",
         "importPath": "scripts.filter_2",
         "description": "scripts.filter_2",
         "isExtraImport": true,
         "detail": "scripts.filter_2",
-        "documentation": {}
-    },
-    {
-        "label": "filter3",
-        "importPath": "scripts.filter_3",
-        "description": "scripts.filter_3",
-        "isExtraImport": true,
-        "detail": "scripts.filter_3",
         "documentation": {}
     },
     {
@@ -166,11 +123,21 @@
         "documentation": {}
     },
     {
-        "label": "filter6",
-        "importPath": "scripts.filter_6_1",
-        "description": "scripts.filter_6_1",
+        "label": "multiprocessing",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "scripts.filter_6_1",
+        "importPath": "multiprocessing",
+        "description": "multiprocessing",
+        "detail": "multiprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
         "documentation": {}
     },
     {
@@ -431,7 +398,7 @@
         "kind": 2,
         "importPath": "app.scripts.new_generator_optimised",
         "description": "app.scripts.new_generator_optimised",
-        "peekOfCode": "def get_aa_line(from_pos, to_pos, str_strength, picture):\n    rr, cc, val = line_aa(from_pos[0], from_pos[1], to_pos[0], to_pos[1])\n    lin = picture[rr, cc] + str_strength*val\n    lin = np.clip(lin, a_min=0, a_max=1)\n    return lin, rr, cc\ndef find_best_nail_position(current_position, nails, str_pic, orig_pic, str_strength):\n    # overlayed_lines = [None]*nails\n    rr_list = []\n    cc_list = []\n    cumulative_improvements = []",
+        "peekOfCode": "def get_aa_line(from_pos, to_pos, str_strength, picture):\n    rr, cc, val = line_aa(from_pos[0], from_pos[1], to_pos[0], to_pos[1])\n    lin = picture[rr, cc] + str_strength*val\n    lin = np.clip(lin, a_min=0, a_max=1)\n    return lin, rr, cc\n# def find_best_nail_position(current_position, nails, str_pic, orig_pic, str_strength):\n#     overlayed_lines = []\n#     rr_list = []\n#     cc_list = []\n#     if RANDOM_NAILS is not None:",
         "detail": "app.scripts.new_generator_optimised",
         "documentation": {}
     },
@@ -440,7 +407,7 @@
         "kind": 2,
         "importPath": "app.scripts.new_generator_optimised",
         "description": "app.scripts.new_generator_optimised",
-        "peekOfCode": "def find_best_nail_position(current_position, nails, str_pic, orig_pic, str_strength):\n    # overlayed_lines = [None]*nails\n    rr_list = []\n    cc_list = []\n    cumulative_improvements = []\n    if RANDOM_NAILS is not None:\n        nail_ids = np.random.choice(len(nails), size=RANDOM_NAILS, replace=False)\n        nails_and_ids = nails[nail_ids]\n    else:\n        nails_and_ids = nails",
+        "peekOfCode": "def find_best_nail_position(current_position, nails, str_pic, orig_pic, str_strength):\n    overlayed_lines = []\n    rr_list = []\n    cc_list = []\n    cumulative_improvements = []\n    if RANDOM_NAILS is not None:\n        nail_ids = np.random.choice(len(nails), size=RANDOM_NAILS, replace=False)\n        nails_and_ids = nails[nail_ids]\n    else:\n        nails_and_ids = nails",
         "detail": "app.scripts.new_generator_optimised",
         "documentation": {}
     },
@@ -449,7 +416,7 @@
         "kind": 2,
         "importPath": "app.scripts.new_generator_optimised",
         "description": "app.scripts.new_generator_optimised",
-        "peekOfCode": "def create_art(nails, orig_pic, str_pic, str_strength, i_limit=None):\n    start = time()\n    iter_times = []\n    current_position = nails[0]\n    pull_order = [0]\n    i = 0\n    fails = 0\n    while True:\n        start_iter = time()\n        i += 1",
+        "peekOfCode": "def create_art(nails, orig_pic, str_pic, str_strength, i_limit=None):\n    start = time()\n    iter_times = []\n    current_position = nails[0]\n    pull_order = [0]\n    i = 0\n    fails = 0\n    while True:\n        i += 1\n        if i % 500 == 0:",
         "detail": "app.scripts.new_generator_optimised",
         "documentation": {}
     },
@@ -458,7 +425,7 @@
         "kind": 2,
         "importPath": "app.scripts.new_generator_optimised",
         "description": "app.scripts.new_generator_optimised",
-        "peekOfCode": "def scale_nails(x_ratio, y_ratio, nails):\n    return [(int(y_ratio * nail[0]), int(x_ratio * nail[1])) for nail in nails]\ndef pull_order_to_array_bw(order, canvas, nails, strength):\n    # Draw a black and white pull order on the defined resolution\n    for pull_start, pull_end in zip(order, order[1:]):  # pairwise iteration\n        rr, cc = line(nails[pull_start][0], nails[pull_start][1],\n                              nails[pull_end][0], nails[pull_end][1])\n        canvas[rr, cc] += strength\n    return np.clip(canvas, a_min=0, a_max=1)\ndef generate(img,filtername):",
+        "peekOfCode": "def scale_nails(x_ratio, y_ratio, nails):\n    return [(int(y_ratio * nail[0]), int(x_ratio * nail[1])) for nail in nails]\ndef pull_order_to_array_bw(order, canvas, nails, strength):\n    # Draw a black and white pull order on the defined resolution\n    for pull_start, pull_end in zip(order, order[1:]):  # pairwise iteration\n        rr, cc = line(nails[pull_start][0], nails[pull_start][1],\n                              nails[pull_end][0], nails[pull_end][1])\n        canvas[rr, cc] += strength\n    return np.clip(canvas, a_min=0, a_max=1)\ndef generate(img, output_file):",
         "detail": "app.scripts.new_generator_optimised",
         "documentation": {}
     },
@@ -467,7 +434,7 @@
         "kind": 2,
         "importPath": "app.scripts.new_generator_optimised",
         "description": "app.scripts.new_generator_optimised",
-        "peekOfCode": "def pull_order_to_array_bw(order, canvas, nails, strength):\n    # Draw a black and white pull order on the defined resolution\n    for pull_start, pull_end in zip(order, order[1:]):  # pairwise iteration\n        rr, cc = line(nails[pull_start][0], nails[pull_start][1],\n                              nails[pull_end][0], nails[pull_end][1])\n        canvas[rr, cc] += strength\n    return np.clip(canvas, a_min=0, a_max=1)\ndef generate(img,filtername):\n    LONG_SIDE = 250\n    path = OUTPUT_PATH",
+        "peekOfCode": "def pull_order_to_array_bw(order, canvas, nails, strength):\n    # Draw a black and white pull order on the defined resolution\n    for pull_start, pull_end in zip(order, order[1:]):  # pairwise iteration\n        rr, cc = line(nails[pull_start][0], nails[pull_start][1],\n                              nails[pull_end][0], nails[pull_end][1])\n        canvas[rr, cc] += strength\n    return np.clip(canvas, a_min=0, a_max=1)\ndef generate(img, output_file):\n    LONG_SIDE = 250\n    if np.any(img > 100):",
         "detail": "app.scripts.new_generator_optimised",
         "documentation": {}
     },
@@ -476,34 +443,25 @@
         "kind": 2,
         "importPath": "app.scripts.new_generator_optimised",
         "description": "app.scripts.new_generator_optimised",
-        "peekOfCode": "def generate(img,filtername):\n    LONG_SIDE = 250\n    path = OUTPUT_PATH\n    print(path)\n    if np.any(img > 100):\n        img = img / 255\n    # cv2.imshow('frame', img); cv2.waitKey(0)\n    if RADIUS1_MULTIPLIER == 1 and RADIUS2_MULTIPLIER == 1:\n        img = largest_square(img)\n        img = cv2.resize(img, (LONG_SIDE, LONG_SIDE))",
+        "peekOfCode": "def generate(img, output_file):\n    LONG_SIDE = 250\n    if np.any(img > 100):\n        img = img / 255\n    # cv2.imshow('frame', img); cv2.waitKey(0)\n    if RADIUS1_MULTIPLIER == 1 and RADIUS2_MULTIPLIER == 1:\n        img = largest_square(img)\n        img = cv2.resize(img, (LONG_SIDE, LONG_SIDE))\n    shape = (len(img), len(img[0]))\n    nails = create_circle_nail_positions(shape, NAILS_SIZE, RADIUS1_MULTIPLIER, RADIUS2_MULTIPLIER)",
         "detail": "app.scripts.new_generator_optimised",
         "documentation": {}
     },
     {
-        "label": "generate_filter",
+        "label": "generate_all",
         "kind": 2,
         "importPath": "app.scripts.new_generator_optimised",
         "description": "app.scripts.new_generator_optimised",
-        "peekOfCode": "def generate_filter(filter_name, img):\n    if filter_name == \"nofilter\":\n        return generate(img, \"nofilter\")\n    elif filter_name == \"filter1\":\n        return generate(filter1(img), \"filter1\")\n    elif filter_name == \"filter2\":\n        return generate(filter2(img), \"filter2\")\n    elif filter_name == \"filter3\":\n        return generate(filter3(img), \"filter3\")\n    elif filter_name == \"filter4\":",
+        "peekOfCode": "def generate_all(path, filename):\n    input_file = path + filename\n    img = cv2.imread(input_file)\n    img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)\n    img1 = generate(img, path + 'result1')\n    img2 = generate(filter2(img), path + 'result2')\n    img3 = generate(filter4(img), path + 'result3')\n    img4 = generate(filter5(img), path + 'result4')\n    return True\ndef generate_all_with_processing(path, filename):",
         "detail": "app.scripts.new_generator_optimised",
         "documentation": {}
     },
     {
-        "label": "generate_with_threads",
+        "label": "generate_all_with_processing",
         "kind": 2,
         "importPath": "app.scripts.new_generator_optimised",
         "description": "app.scripts.new_generator_optimised",
-        "peekOfCode": "def generate_with_threads(img):\n    filters = [\"nofilter\", \"filter2\", \"filter4\", \"filter5\"]\n    results = {}\n    def generate_filter_thread(filter_name):\n        result = generate_filter(filter_name, img)\n        results[filter_name] = result\n    threads = []\n    for filter_name in filters:\n        thread = threading.Thread(target=generate_filter_thread, args=(filter_name,))\n        threads.append(thread)",
-        "detail": "app.scripts.new_generator_optimised",
-        "documentation": {}
-    },
-    {
-        "label": "generate_with_multiprocessing",
-        "kind": 2,
-        "importPath": "app.scripts.new_generator_optimised",
-        "description": "app.scripts.new_generator_optimised",
-        "peekOfCode": "def generate_with_multiprocessing(img):\n    filters = [\"nofilter\", \"filter1\",\"filter2\",\"filter3\", \"filter4\", \"filter5\",\"filter6\"]\n    pool = multiprocessing.Pool(processes=len(filters))\n    results = pool.starmap(generate_filter, [(filter_name, img) for filter_name in filters])\n    pool.close()\n    pool.join()\n    img0,img1, img2, img3, img4, img5, img6 = results\n    return img0,img1, img2, img3, img4, img5, img6\nif __name__ == '__main__':\n    img = cv2.imread(r\"G:\\volumeD9july2023\\python\\turtle\\stringart\\collarge\\final_filters\\37\\sung-wang-g4DgCF90EM4-unsplash.jpg\")",
+        "peekOfCode": "def generate_all_with_processing(path, filename):\n    input_file = path + filename\n    img = cv2.imread(input_file)\n    img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)\n    img_params = [\n        (img, path + 'result1'),\n        (filter2(img), path + 'result2'),\n        (filter4(img), path + 'result3'),\n        (filter5(img), path + 'result4')\n    ]",
         "detail": "app.scripts.new_generator_optimised",
         "documentation": {}
     },
@@ -512,16 +470,7 @@
         "kind": 5,
         "importPath": "app.scripts.new_generator_optimised",
         "description": "app.scripts.new_generator_optimised",
-        "peekOfCode": "OUTPUT_FILE = \"output.png\"\nJSON_FILE = \"result.json\"\nSIDE_LEN = 500\nEXPORT_STRENGTH = 0.07\nPULL_AMOUNT = 5000\nRANDOM_NAILS = None\nRADIUS1_MULTIPLIER = 1\nRADIUS2_MULTIPLIER = 1\nNAILS_SIZE = 240\n# OUTPUT_PATH = os.getcwd()",
-        "detail": "app.scripts.new_generator_optimised",
-        "documentation": {}
-    },
-    {
-        "label": "JSON_FILE",
-        "kind": 5,
-        "importPath": "app.scripts.new_generator_optimised",
-        "description": "app.scripts.new_generator_optimised",
-        "peekOfCode": "JSON_FILE = \"result.json\"\nSIDE_LEN = 500\nEXPORT_STRENGTH = 0.07\nPULL_AMOUNT = 5000\nRANDOM_NAILS = None\nRADIUS1_MULTIPLIER = 1\nRADIUS2_MULTIPLIER = 1\nNAILS_SIZE = 240\n# OUTPUT_PATH = os.getcwd()\nOUTPUT_PATH = \"upload\"",
+        "peekOfCode": "OUTPUT_FILE = \"output.png\"\nSIDE_LEN = 500\nEXPORT_STRENGTH = 0.07\nPULL_AMOUNT = 5000\nRANDOM_NAILS = None\nRADIUS1_MULTIPLIER = 1\nRADIUS2_MULTIPLIER = 1\nNAILS_SIZE = 240\ndef rgb2gray(rgb):\n    return np.dot(rgb[..., :3], [0.2989, 0.5870, 0.1140])",
         "detail": "app.scripts.new_generator_optimised",
         "documentation": {}
     },
@@ -530,7 +479,7 @@
         "kind": 5,
         "importPath": "app.scripts.new_generator_optimised",
         "description": "app.scripts.new_generator_optimised",
-        "peekOfCode": "SIDE_LEN = 500\nEXPORT_STRENGTH = 0.07\nPULL_AMOUNT = 5000\nRANDOM_NAILS = None\nRADIUS1_MULTIPLIER = 1\nRADIUS2_MULTIPLIER = 1\nNAILS_SIZE = 240\n# OUTPUT_PATH = os.getcwd()\nOUTPUT_PATH = \"upload\"\ndef rgb2gray(rgb):",
+        "peekOfCode": "SIDE_LEN = 500\nEXPORT_STRENGTH = 0.07\nPULL_AMOUNT = 5000\nRANDOM_NAILS = None\nRADIUS1_MULTIPLIER = 1\nRADIUS2_MULTIPLIER = 1\nNAILS_SIZE = 240\ndef rgb2gray(rgb):\n    return np.dot(rgb[..., :3], [0.2989, 0.5870, 0.1140])\ndef largest_square(image: np.ndarray) -> np.ndarray:",
         "detail": "app.scripts.new_generator_optimised",
         "documentation": {}
     },
@@ -539,7 +488,7 @@
         "kind": 5,
         "importPath": "app.scripts.new_generator_optimised",
         "description": "app.scripts.new_generator_optimised",
-        "peekOfCode": "EXPORT_STRENGTH = 0.07\nPULL_AMOUNT = 5000\nRANDOM_NAILS = None\nRADIUS1_MULTIPLIER = 1\nRADIUS2_MULTIPLIER = 1\nNAILS_SIZE = 240\n# OUTPUT_PATH = os.getcwd()\nOUTPUT_PATH = \"upload\"\ndef rgb2gray(rgb):\n    return np.dot(rgb[..., :3], [0.2989, 0.5870, 0.1140])",
+        "peekOfCode": "EXPORT_STRENGTH = 0.07\nPULL_AMOUNT = 5000\nRANDOM_NAILS = None\nRADIUS1_MULTIPLIER = 1\nRADIUS2_MULTIPLIER = 1\nNAILS_SIZE = 240\ndef rgb2gray(rgb):\n    return np.dot(rgb[..., :3], [0.2989, 0.5870, 0.1140])\ndef largest_square(image: np.ndarray) -> np.ndarray:\n    size = min(image.shape[:2])",
         "detail": "app.scripts.new_generator_optimised",
         "documentation": {}
     },
@@ -548,7 +497,7 @@
         "kind": 5,
         "importPath": "app.scripts.new_generator_optimised",
         "description": "app.scripts.new_generator_optimised",
-        "peekOfCode": "PULL_AMOUNT = 5000\nRANDOM_NAILS = None\nRADIUS1_MULTIPLIER = 1\nRADIUS2_MULTIPLIER = 1\nNAILS_SIZE = 240\n# OUTPUT_PATH = os.getcwd()\nOUTPUT_PATH = \"upload\"\ndef rgb2gray(rgb):\n    return np.dot(rgb[..., :3], [0.2989, 0.5870, 0.1140])\ndef largest_square(image: np.ndarray) -> np.ndarray:",
+        "peekOfCode": "PULL_AMOUNT = 5000\nRANDOM_NAILS = None\nRADIUS1_MULTIPLIER = 1\nRADIUS2_MULTIPLIER = 1\nNAILS_SIZE = 240\ndef rgb2gray(rgb):\n    return np.dot(rgb[..., :3], [0.2989, 0.5870, 0.1140])\ndef largest_square(image: np.ndarray) -> np.ndarray:\n    size = min(image.shape[:2])\n    return image[:size, :size]",
         "detail": "app.scripts.new_generator_optimised",
         "documentation": {}
     },
@@ -557,7 +506,7 @@
         "kind": 5,
         "importPath": "app.scripts.new_generator_optimised",
         "description": "app.scripts.new_generator_optimised",
-        "peekOfCode": "RANDOM_NAILS = None\nRADIUS1_MULTIPLIER = 1\nRADIUS2_MULTIPLIER = 1\nNAILS_SIZE = 240\n# OUTPUT_PATH = os.getcwd()\nOUTPUT_PATH = \"upload\"\ndef rgb2gray(rgb):\n    return np.dot(rgb[..., :3], [0.2989, 0.5870, 0.1140])\ndef largest_square(image: np.ndarray) -> np.ndarray:\n    size = min(image.shape[:2])",
+        "peekOfCode": "RANDOM_NAILS = None\nRADIUS1_MULTIPLIER = 1\nRADIUS2_MULTIPLIER = 1\nNAILS_SIZE = 240\ndef rgb2gray(rgb):\n    return np.dot(rgb[..., :3], [0.2989, 0.5870, 0.1140])\ndef largest_square(image: np.ndarray) -> np.ndarray:\n    size = min(image.shape[:2])\n    return image[:size, :size]\ndef create_circle_nail_positions(shape, nail_count=240, r1_multip=1, r2_multip=1):",
         "detail": "app.scripts.new_generator_optimised",
         "documentation": {}
     },
@@ -566,7 +515,7 @@
         "kind": 5,
         "importPath": "app.scripts.new_generator_optimised",
         "description": "app.scripts.new_generator_optimised",
-        "peekOfCode": "RADIUS1_MULTIPLIER = 1\nRADIUS2_MULTIPLIER = 1\nNAILS_SIZE = 240\n# OUTPUT_PATH = os.getcwd()\nOUTPUT_PATH = \"upload\"\ndef rgb2gray(rgb):\n    return np.dot(rgb[..., :3], [0.2989, 0.5870, 0.1140])\ndef largest_square(image: np.ndarray) -> np.ndarray:\n    size = min(image.shape[:2])\n    return image[:size, :size]",
+        "peekOfCode": "RADIUS1_MULTIPLIER = 1\nRADIUS2_MULTIPLIER = 1\nNAILS_SIZE = 240\ndef rgb2gray(rgb):\n    return np.dot(rgb[..., :3], [0.2989, 0.5870, 0.1140])\ndef largest_square(image: np.ndarray) -> np.ndarray:\n    size = min(image.shape[:2])\n    return image[:size, :size]\ndef create_circle_nail_positions(shape, nail_count=240, r1_multip=1, r2_multip=1):\n    height = shape[0]",
         "detail": "app.scripts.new_generator_optimised",
         "documentation": {}
     },
@@ -575,7 +524,7 @@
         "kind": 5,
         "importPath": "app.scripts.new_generator_optimised",
         "description": "app.scripts.new_generator_optimised",
-        "peekOfCode": "RADIUS2_MULTIPLIER = 1\nNAILS_SIZE = 240\n# OUTPUT_PATH = os.getcwd()\nOUTPUT_PATH = \"upload\"\ndef rgb2gray(rgb):\n    return np.dot(rgb[..., :3], [0.2989, 0.5870, 0.1140])\ndef largest_square(image: np.ndarray) -> np.ndarray:\n    size = min(image.shape[:2])\n    return image[:size, :size]\ndef create_circle_nail_positions(shape, nail_count=240, r1_multip=1, r2_multip=1):",
+        "peekOfCode": "RADIUS2_MULTIPLIER = 1\nNAILS_SIZE = 240\ndef rgb2gray(rgb):\n    return np.dot(rgb[..., :3], [0.2989, 0.5870, 0.1140])\ndef largest_square(image: np.ndarray) -> np.ndarray:\n    size = min(image.shape[:2])\n    return image[:size, :size]\ndef create_circle_nail_positions(shape, nail_count=240, r1_multip=1, r2_multip=1):\n    height = shape[0]\n    width = shape[1]",
         "detail": "app.scripts.new_generator_optimised",
         "documentation": {}
     },
@@ -584,16 +533,7 @@
         "kind": 5,
         "importPath": "app.scripts.new_generator_optimised",
         "description": "app.scripts.new_generator_optimised",
-        "peekOfCode": "NAILS_SIZE = 240\n# OUTPUT_PATH = os.getcwd()\nOUTPUT_PATH = \"upload\"\ndef rgb2gray(rgb):\n    return np.dot(rgb[..., :3], [0.2989, 0.5870, 0.1140])\ndef largest_square(image: np.ndarray) -> np.ndarray:\n    size = min(image.shape[:2])\n    return image[:size, :size]\ndef create_circle_nail_positions(shape, nail_count=240, r1_multip=1, r2_multip=1):\n    height = shape[0]",
-        "detail": "app.scripts.new_generator_optimised",
-        "documentation": {}
-    },
-    {
-        "label": "OUTPUT_PATH",
-        "kind": 5,
-        "importPath": "app.scripts.new_generator_optimised",
-        "description": "app.scripts.new_generator_optimised",
-        "peekOfCode": "OUTPUT_PATH = \"upload\"\ndef rgb2gray(rgb):\n    return np.dot(rgb[..., :3], [0.2989, 0.5870, 0.1140])\ndef largest_square(image: np.ndarray) -> np.ndarray:\n    size = min(image.shape[:2])\n    return image[:size, :size]\ndef create_circle_nail_positions(shape, nail_count=240, r1_multip=1, r2_multip=1):\n    height = shape[0]\n    width = shape[1]\n    centre = (height // 2, width // 2)",
+        "peekOfCode": "NAILS_SIZE = 240\ndef rgb2gray(rgb):\n    return np.dot(rgb[..., :3], [0.2989, 0.5870, 0.1140])\ndef largest_square(image: np.ndarray) -> np.ndarray:\n    size = min(image.shape[:2])\n    return image[:size, :size]\ndef create_circle_nail_positions(shape, nail_count=240, r1_multip=1, r2_multip=1):\n    height = shape[0]\n    width = shape[1]\n    centre = (height // 2, width // 2)",
         "detail": "app.scripts.new_generator_optimised",
         "documentation": {}
     },

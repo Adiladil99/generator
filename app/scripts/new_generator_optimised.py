@@ -4,19 +4,13 @@ from skimage.draw import line_aa, ellipse_perimeter, line
 from math import atan2
 from skimage.transform import resize
 from time import time
-import argparse
-import threading
-import multiprocessing
-from scripts.filter_1 import filter1
 from scripts.filter_2 import filter2
-from scripts.filter_3 import filter3
 from scripts.filter_4 import filter4
 from scripts.filter_5 import filter5
-from scripts.filter_6_1 import filter6
-import os
+import multiprocessing
+import argparse
 
 OUTPUT_FILE = "output.png"
-JSON_FILE = "result.json"
 SIDE_LEN = 500
 EXPORT_STRENGTH = 0.07
 PULL_AMOUNT = 5000
@@ -24,8 +18,6 @@ RANDOM_NAILS = None
 RADIUS1_MULTIPLIER = 1
 RADIUS2_MULTIPLIER = 1
 NAILS_SIZE = 240
-# OUTPUT_PATH = os.getcwd()
-OUTPUT_PATH = "upload"
 
 def rgb2gray(rgb):
     return np.dot(rgb[..., :3], [0.2989, 0.5870, 0.1140])
@@ -67,8 +59,46 @@ def get_aa_line(from_pos, to_pos, str_strength, picture):
 
     return lin, rr, cc
 
+
+
+# def find_best_nail_position(current_position, nails, str_pic, orig_pic, str_strength):
+#     overlayed_lines = []
+#     rr_list = []
+#     cc_list = []
+
+#     if RANDOM_NAILS is not None:
+#         nail_ids = np.random.choice(len(nails), size=RANDOM_NAILS, replace=False)
+#         nails_and_ids = nails[nail_ids]
+#     else:
+#         nails_and_ids = nails
+
+#     for nail_position in nails_and_ids:
+#         overlayed_line, rr, cc = get_aa_line(current_position, nail_position, str_strength, str_pic)
+#         overlayed_lines.append(overlayed_line)
+#         rr_list.append(rr)
+#         cc_list.append(cc)
+
+#     overlayed_lines = np.array(overlayed_lines)
+#     rr_list = np.concatenate(rr_list)
+#     cc_list = np.concatenate(cc_list)
+
+#     before_overlayed_line_diff = np.abs(str_pic[rr_list, cc_list] - orig_pic[rr_list, cc_list]) ** 2
+#     after_overlayed_line_diff = np.abs(overlayed_lines - orig_pic[rr_list, cc_list]) ** 2
+
+#     cumulative_improvements = np.sum(before_overlayed_line_diff - after_overlayed_line_diff, axis=1)
+#     best_idx = np.argmax(cumulative_improvements)
+
+#     if cumulative_improvements[best_idx] > 0:
+#         best_nail_position = nails_and_ids[best_idx]
+#         best_nail_idx = best_idx
+#     else:
+#         best_nail_position = None
+#         best_nail_idx = None
+
+#     return best_nail_idx, best_nail_position, cumulative_improvements[best_idx]
+
 def find_best_nail_position(current_position, nails, str_pic, orig_pic, str_strength):
-    # overlayed_lines = [None]*nails
+    overlayed_lines = []
     rr_list = []
     cc_list = []
     cumulative_improvements = []
@@ -79,7 +109,7 @@ def find_best_nail_position(current_position, nails, str_pic, orig_pic, str_stre
     else:
         nails_and_ids = nails
 
-    for index, nail_position in enumerate(nails_and_ids):
+    for nail_position in nails_and_ids:
         overlayed_line, rr, cc = get_aa_line(current_position, nail_position, str_strength, str_pic)
         # overlayed_lines.append(overlayed_line)
         rr_list.append(rr)
@@ -118,7 +148,6 @@ def create_art(nails, orig_pic, str_pic, str_strength, i_limit=None):
     i = 0
     fails = 0
     while True:
-        start_iter = time()
 
         i += 1
 
@@ -149,10 +178,8 @@ def create_art(nails, orig_pic, str_pic, str_strength, i_limit=None):
         str_pic[rr, cc] = best_overlayed_line
 
         current_position = best_nail_position
-        iter_times.append(time() - start_iter)
 
     print(f"Time: {time() - start}")
-    print(f"Avg iteration time: {np.mean(iter_times)}")
     print(len(pull_order))
     return pull_order
 
@@ -172,12 +199,10 @@ def pull_order_to_array_bw(order, canvas, nails, strength):
     return np.clip(canvas, a_min=0, a_max=1)
 
 
-def generate(img,filtername):
+def generate(img, output_file):
 
     LONG_SIDE = 250
 
-    path = OUTPUT_PATH
-    print(path)
     if np.any(img > 100):
         img = img / 255
     # cv2.imshow('frame', img); cv2.waitKey(0)
@@ -212,73 +237,46 @@ def generate(img,filtername):
         scaled_nails,
         -EXPORT_STRENGTH
     )
+    cv2.imwrite(f'{output_file}.png', result * 255)
 
-    cv2.imwrite(os.path.join(path ,filtername + OUTPUT_FILE), result * 255)
-    finalimg = result * 255
-    with open(os.path.join(path , filtername + JSON_FILE), "w") as f:
+    with open(f"{output_file}.json", "w") as f:
     # with open("result.json", "w") as f:
         f.write(str(pull_order))
     print("done")
-    return finalimg
 
-def generate_filter(filter_name, img):
-    if filter_name == "nofilter":
-        return generate(img, "nofilter")
-    elif filter_name == "filter1":
-        return generate(filter1(img), "filter1")
-    elif filter_name == "filter2":
-        return generate(filter2(img), "filter2")
-    elif filter_name == "filter3":
-        return generate(filter3(img), "filter3")
-    elif filter_name == "filter4":
-        return generate(filter4(img), "filter4")
-    elif filter_name == "filter5":
-        return generate(filter5(img), "filter5")
-    elif filter_name == "filter6":
-        return generate(filter6(img), "filter6")
-    else:
-        raise ValueError(f"Invalid filter name: {filter_name}")
+def generate_all(path, filename):
 
-def generate_with_threads(img):
-    filters = ["nofilter", "filter2", "filter4", "filter5"]
-    results = {}
-
-    def generate_filter_thread(filter_name):
-        result = generate_filter(filter_name, img)
-        results[filter_name] = result
-
-    threads = []
-    for filter_name in filters:
-        thread = threading.Thread(target=generate_filter_thread, args=(filter_name,))
-        threads.append(thread)
-        thread.start()
-
-    for thread in threads:
-        thread.join()
-
-    img0 = results["nofilter"]
-    img1 = results["filter1"]
-    img2 = results["filter2"]
-    img3 = results["filter3"]
-    img4 = results["filter4"]
-    img5 = results["filter5"]
-    img6 = results["filter6"]
-
-    return img0,img1, img2, img3, img4, img5, img6
-
-def generate_with_multiprocessing(img):
-    filters = ["nofilter", "filter1","filter2","filter3", "filter4", "filter5","filter6"]
-    pool = multiprocessing.Pool(processes=len(filters))
-    results = pool.starmap(generate_filter, [(filter_name, img) for filter_name in filters])
-    pool.close()
-    pool.join()
-
-    img0,img1, img2, img3, img4, img5, img6 = results
-
-    return img0,img1, img2, img3, img4, img5, img6
-
-if __name__ == '__main__':
-    img = cv2.imread(r"G:\volumeD9july2023\python\turtle\stringart\collarge\final_filters\37\sung-wang-g4DgCF90EM4-unsplash.jpg")
+    input_file = path + filename
+    img = cv2.imread(input_file)
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
-    img0,img1, img2, img3, img4, img5, img6 = generate_with_multiprocessing(img)
+    img1 = generate(img, path + 'result1')
+    img2 = generate(filter2(img), path + 'result2')
+    img3 = generate(filter4(img), path + 'result3')
+    img4 = generate(filter5(img), path + 'result4')
+    
+    return True
+
+def generate_all_with_processing(path, filename):
+    input_file = path + filename
+    img = cv2.imread(input_file)
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+
+    img_params = [
+        (img, path + 'result1'),
+        (filter2(img), path + 'result2'),
+        (filter4(img), path + 'result3'),
+        (filter5(img), path + 'result4')
+    ]
+
+    pool = multiprocessing.Pool(processes=4)
+    results = pool.starmap(generate, img_params)
+    pool.close()
+    pool.join()
+    
+    return True
+
+if __name__ == '__main__':
+    # generate('', '../MyPointArt/generateLocal/scripts/photo10.jpg')
+    generate('', '../MyPointArt/generateLocal/scripts/test.jpg')
+    # generate('', '../MyPointArt/generateLocal/scripts/photo4.jpg')
